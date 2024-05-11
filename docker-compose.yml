@@ -4,14 +4,14 @@ version: '3'
 volumes:
   mysql_data:
 services:
-  rails_app:
+  external_authentication:
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - '.:/rails_app/'
+      - '.:/external_authentication/'
     ports:
-      - '3011:3011'
+      - '3013:3013'
     tty: true
     stdin_open: true
     depends_on:
@@ -23,4 +23,4 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password
     ports:
-      - '3312:3312'
+      - '3314:3314'
