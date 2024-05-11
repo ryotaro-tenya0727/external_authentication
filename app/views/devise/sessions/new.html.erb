@@ -22,5 +22,7 @@
     <%= f.submit "Log in" %>
   </div>
 <% end %>
+<%= link_to "Sign in with Github", user_github_omniauth_authorize_path, method: :post %>
+<br/>
 
 <%= render "devise/shared/links" %>
