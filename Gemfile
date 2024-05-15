@@ -6,6 +6,7 @@ ruby "3.2.3"
 gem "rails", "~> 7.1.3", ">= 7.1.3.2"
 gem 'devise', '~> 4.9', '>= 4.9.4'
 gem 'omniauth-github', '~> 2.0', '>= 2.0.1'
+gem 'omniauth-line', '~> 0.1.0'
 gem 'dotenv-rails', '~> 3.1', '>= 3.1.2'
 gem 'omniauth-rails_csrf_protection', '~> 1.0', '>= 1.0.2'
 gem 'pry-rails'
